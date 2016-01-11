@@ -1,14 +1,14 @@
 module.exports = function(grunt) {
    grunt.initConfig({
-      sass: {
-         dist: {
+      coffee: {
+         compile: {
             files: {
-               'screen.css': 'screen.scss'
+               'coffee.js': 'coffee.coffee'
             }
          }
       }
    });
-   grunt.loadNpmTasks('grunt-contrib-sass');
-   grunt.registerTask('default', 'Log some stuff.', ['sass']);
+   grunt.loadNpmTasks('grunt-contrib-coffee');
+   grunt.registerTask('default', 'Log some stuff.', ['coffee']);
 
 };
