@@ -1,14 +1,10 @@
 module.exports = function(grunt) {
    grunt.initConfig({
-      sass: {
-         dist: {
-            files: {
-               'screen.css': 'screen.scss'
-            }
-         }
+      serve: {
+         path: 'Angular-D3'
       }
    });
-   grunt.loadNpmTasks('grunt-contrib-sass');
-   grunt.registerTask('default', 'Log some stuff.', ['sass']);
+   grunt.loadNpmTasks('grunt-serve');
+   grunt.registerTask('default', 'Log some stuff.', ['serve']);
 
 };
