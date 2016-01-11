@@ -1,14 +1,18 @@
 module.exports = function(grunt) {
    grunt.initConfig({
-      sass: {
-         dist: {
+      cssmin: {
+         options: {
+            shorthandCompacting: false,
+            roundingPrecision: -1
+         },
+         target: {
             files: {
-               'screen.css': 'screen.scss'
+               'output.css': ['app.css']
             }
          }
       }
    });
-   grunt.loadNpmTasks('grunt-contrib-sass');
-   grunt.registerTask('default', 'Log some stuff.', ['sass']);
+   grunt.loadNpmTasks('grunt-contrib-cssmin');
+   grunt.registerTask('default', 'Log some stuff.', ['cssmin']);
 
 };
