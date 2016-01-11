@@ -1,14 +1,14 @@
 module.exports = function(grunt) {
    grunt.initConfig({
-      sass: {
-         dist: {
+      uglify: {
+         my_target: {
             files: {
-               'screen.css': 'screen.scss'
+               'dest/output.min.js': ['app.js']
             }
          }
       }
    });
-   grunt.loadNpmTasks('grunt-contrib-sass');
-   grunt.registerTask('default', 'Log some stuff.', ['sass']);
+   grunt.loadNpmTasks('grunt-contrib-uglify');
+   grunt.registerTask('default', 'Log some stuff.', ['uglify']);
 
 };
