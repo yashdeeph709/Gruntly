@@ -7,4 +7,4 @@ This repo is made for exercising these tasks with grunt
 * Grunt Practice No 4 : Make JSLint task for javascript coding convention setup **DoneMan**
 * Grunt Practice No 5 : Setup uglify for javascript **DoneMan**
 * Grunt Practice No 6 : Setup minifier for css **DoneMan**
-* Grunt Practice No 7 : Make grunt serve for your project
+* Grunt Practice No 7 : Make grunt serve for your project **DoneMan**
