@@ -1,14 +1,12 @@
 module.exports = function(grunt) {
    grunt.initConfig({
-      sass: {
-         dist: {
-            files: {
-               'screen.css': 'screen.scss'
-            }
+      jshint: {
+         files: {
+            src: ['abc.js']
          }
       }
    });
-   grunt.loadNpmTasks('grunt-contrib-sass');
-   grunt.registerTask('default', 'Log some stuff.', ['sass']);
+   grunt.loadNpmTasks('grunt-contrib-jshint');
+   grunt.registerTask('default', 'Log some stuff.', ['jshint']);
 
 };
